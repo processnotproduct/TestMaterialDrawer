@@ -1,0 +1,73 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true">
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:fitsSystemWindows="true"
+        android:elevation="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- The main content view -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.Toolbar
+                android:background="?attr/colorPrimary"
+                android:elevation="4dp"
+                android:id="@+id/main_toolbar"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:minHeight="?attr/actionBarSize"
+                app:theme="@style/ToolbarOverlay"
+                app:popupTheme="@style/PopupOverlay">
+
+            </android.support.v7.widget.Toolbar>
+
+            <FrameLayout
+                android:id="@+id/content_frame"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+            </FrameLayout>
+
+
+        </LinearLayout>
+
+        <!-- The navigation drawer -->
+
+        <com.specoria.tkemp.testmaterialdrawer.Widgets.ScrimInsetsFrameLayout
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/scrimInsetsFrameLayout"
+            android:layout_width="308dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:elevation="10dp"
+            android:background="@color/white"
+            android:fitsSystemWindows="true"
+            app:insetForeground="#4000">
+
+            <ListView
+                android:id="@+id/drawer_listview"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:minHeight="?android:attr/listPreferredItemHeight"
+                android:fitsSystemWindows="true"
+                android:divider="@null"
+                android:dividerHeight="0dp"
+                android:headerDividersEnabled="true">
+
+            </ListView>
+
+        </com.specoria.tkemp.testmaterialdrawer.Widgets.ScrimInsetsFrameLayout>
+
+    </android.support.v4.widget.DrawerLayout>
+
+</RelativeLayout>
