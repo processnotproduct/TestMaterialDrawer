@@ -41,8 +41,8 @@
 
         </LinearLayout>
 
-        <!-- The navigation drawer -->
 
+        <!-- The navigation drawer -->
         <com.specoria.tkemp.testmaterialdrawer.Widgets.ScrimInsetsFrameLayout
             xmlns:app="http://schemas.android.com/apk/res-auto"
             android:id="@+id/scrimInsetsFrameLayout"

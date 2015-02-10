@@ -1,35 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-<style name="AppTheme" parent="Theme.AppCompat.Light">
-    <item name="windowActionBar">false</item>
-    <item name="colorPrimary">@color/main_blue</item>
-    <item name="colorPrimaryDark">@color/main_blue_dark</item>
-    <item name="colorAccent">@color/main_blue</item>
-    <item name="colorControlHighlight">@color/main_blue</item>
-    <item name="android:windowNoTitle">true</item>
-    <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
-    <item name="windowActionModeOverlay">true</item>
-    <item name="android:windowDrawsSystemBarBackgrounds">true</item>
-    <item name="android:statusBarColor">#ffbd009a</item>
-</style>
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <item name="windowActionBar">false</item>
+        <item name="colorPrimary">@color/main_blue</item>
+        <item name="colorPrimaryDark">@color/main_blue_dark</item>
+        <item name="colorAccent">@color/main_blue</item>
+        <item name="colorControlHighlight">@color/main_blue</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+        <item name="windowActionModeOverlay">true</item>
+    </style>
 
-<style name="DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
-    <item name="spinBars">true</item>
-    <item name="color">@android:color/white</item>
-</style>
+    <!--used to have the arrow animation for the hamburger button-->
+    <style name="DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">@android:color/white</item>
+    </style>
 
-<style name="WelcomeTheme" parent="Theme.AppCompat.Light">
-    <item name="android:background">@color/main_blue</item>
-</style>
+    <!--styles the toolbar to this color and font color-->
+    <style name="ToolbarOverlay" parent="Theme.AppCompat.Light">
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="colorPrimary">@color/main_blue</item>
+        <item name="android:textColorSecondary">@color/white</item>
+    </style>
 
-<style name="ToolbarOverlay" parent="Theme.AppCompat.Light">
-    <item name="android:textColorPrimary">@color/white</item>
-    <item name="colorPrimary">@color/main_blue</item>
-    <item name="android:textColorSecondary">@color/white</item>
-</style>
+    <!--this is used for styling the popup like from the three dots on the right-->
+    <style name="PopupOverlay" parent="Theme.AppCompat.Light">
 
-<style name="PopupOverlay" parent="Theme.AppCompat.Light">
-
-</style>
+    </style>
 
 </resources>
