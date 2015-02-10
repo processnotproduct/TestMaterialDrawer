@@ -1,10 +1,10 @@
 package com.specoria.tkemp.testmaterialdrawer;
 
-import android.support.v4.app.FragmentManager;
 import android.content.Intent;
 import android.content.IntentSender;
 import android.content.res.Configuration;
 import android.os.Bundle;
+import android.support.v4.app.FragmentManager;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -22,6 +22,7 @@ import com.google.android.gms.plus.model.people.Person;
 import com.squareup.picasso.Picasso;
 
 public class MainActivity extends ActionBarActivity implements GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener {
+
     private ActionBarDrawerToggle mDrawerToggle;
     private DrawerLayout mDrawerLayout;
     private ListView mDrawerList;
