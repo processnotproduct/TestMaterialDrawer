@@ -26,7 +26,7 @@ public class MainActivity extends ActionBarActivity implements GoogleApiClient.C
     private ActionBarDrawerToggle mDrawerToggle;
     private DrawerLayout mDrawerLayout;
     private ListView mDrawerList;
-    private FragmentManager mFragmentManager;
+//    private FragmentManager mFragmentManager;
     private View mHeaderView;
 
     private static final int REQUEST_RESOLVE_ERROR = 1001;
@@ -43,7 +43,7 @@ public class MainActivity extends ActionBarActivity implements GoogleApiClient.C
         setSupportActionBar(toolbar);
 
         mHeaderView = getLayoutInflater().inflate(R.layout.user_header_layout, null);
-        mFragmentManager = getSupportFragmentManager();
+//        mFragmentManager = getSupportFragmentManager();
 
         mGoogleApiClient = buildGoogleApiClient();
         mGoogleApiClient.connect();
